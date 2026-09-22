@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Harshit's Portfolio</title>
+  <style>
+    body {
+      margin:0;
+      font-family:'Segoe UI',Arial,sans-serif;
+      background:#f4f4f9;
+      color:#333;
+    }
+    h1 {
+      color:#4CAF50;
+      text-align:center;
+      margin-top:20px;
+    }
+    nav {
+      display:flex;
+      justify-content:center;
+      background:#333;
+      padding:10px;
+    }
+    nav a {
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      padding:8px 12px;
+      transition:background 0.3s,transform 0.2s;
+    }
+    nav a:hover {
+      background:#4CAF50;
+      border-radius:5px;
+      transform:scale(1.1);
+    }
+    .container {
+      max-width:800px;
+      margin:50px auto;
+      padding:30px;
+      background:white;
+      border-radius:10px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align:center;
+      background:#333;
+      color:white;
+      padding:15px;
+      margin-top:40px;
+    }
+    /* Dark mode styles */
+    body.dark {
+      background: #121212;
+      color: #f4f4f9;
+    }
+    body.dark section {
+      background: #1e1e1e;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+    }
+    body.dark h2 { color: #90ee90; }
+    body.dark a {
+      background: #90ee90;
+      color: #121212;
+    }
+    body.dark a:hover { background: #76c776; }
+
+    /* Toggle button */
+    #toggleBtn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    #toggleBtn:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+  <button id="toggleBtn">🌙 Dark Mode</button>
+  <center>
+  <h1>Welcome to My Portfolio</h1>
+  <nav>
+    <a href="/about">About</a> |
+    <a href="/skills">Skills</a> |
+    <a href="/projects">Projects</a> |
+    <a href="/contact">Contact</a>
+  </nav>
+  <p>Explore my work and background using the links above.</p>
+  </center>
+  <script>
+    const btn = document.getElementById('toggleBtn');
+    btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    btn.textContent = document.body.classList.contains('dark') 
+    ? '☀️ Light Mode' 
+    : '🌙 Dark Mode';
+    });
+  </script>
+
+</body>
+</html>

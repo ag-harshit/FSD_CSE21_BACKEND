@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+        }
+        section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        }
+        section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        h2 {
+        color: #4CAF50;
+        margin-bottom: 15px;
+        text-align: center;
+        }
+        p {
+        font-size: 1.1em;
+        text-align: justify;
+        }
+        a {
+        display: inline-block;
+        margin-top: 20px;
+        background: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.2s;
+        }
+        a:hover {
+        background: #45a049;
+        transform: scale(1.05);
+        }
+        ul {
+        list-style: none;
+        padding: 0;
+        }
+        ul li {
+        background: #e8f5e9;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 5px;
+        transition: transform 0.2s;
+        }
+        ul li:hover {
+        transform: translateX(5px);
+        }
+        /* Dark mode styles */
+        body.dark {
+            background: #121212;
+            color: #f4f4f9;
+        }
+        body.dark section {
+            background: #1e1e1e;
+            box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+        }
+        body.dark h2 { color: #90ee90; }
+        body.dark a {
+            background: #90ee90;
+            color: #121212;
+        }
+        body.dark a:hover { background: #76c776; }
+
+        /* Toggle button */
+        #toggleBtn {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        #toggleBtn:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <button id="toggleBtn">🌙 Dark Mode</button>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+            A responsive personal portfolio built with HTML, CSS, and JavaScript, 
+            served via Express.js for dynamic hosting.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>C++ DSA Practice</h3>
+            <p>
+            Implemented data structures including circular queue, priority queue, 
+            stack, and infix/postfix evaluation with clean, modular code.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Node.js CRUD App</h3>
+            <p>
+            Built a basic backend using Node.js and Express to handle 
+            Create, Read, Update, and Delete operations with JSON data.
+            </p>
+        </div>
+        <div class="project-card">
+            <h3>Presentation Design</h3>
+            <p>
+            Designed professional posters and certificates with polished formatting, 
+            exported to PDF for academic and professional use.
+            </p>
+        </div>
+        <a href="/">Back to Home</a>
+    </section>
+    <script>
+        const btn = document.getElementById('toggleBtn');
+        btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        btn.textContent = document.body.classList.contains('dark') 
+            ? '☀️ Light Mode' 
+            : '🌙 Dark Mode';
+        });
+    </script>
+
+</body>
+</html>

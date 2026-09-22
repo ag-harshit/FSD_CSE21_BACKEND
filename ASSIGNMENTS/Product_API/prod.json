@@ -1,0 +1,187 @@
+[ {
+    "id": 1,
+    "name": "Key",
+    "price": 4600,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Keyboard",
+    "price": 4000,
+    "inStock": false
+  },
+  {
+    "id": 3,
+    "name": "Joystick",
+    "price": 3000,
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "name": "Laptop",
+    "price": 75000,
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Printer",
+    "price": 8000,
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "Monitor",
+    "price": 15000,
+    "inStock": true
+  },
+  {
+    "id": 7,
+    "name": "Webcam",
+    "price": 3500,
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "name": "Headphones",
+    "price": 2500,
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "name": "Speaker",
+    "price": 4500,
+    "inStock": false
+  },
+  {
+    "id": 10,
+    "name": "Microphone",
+    "price": 5000,
+    "inStock": true
+  },
+  {
+    "id": 11,
+    "name": "USB Cable",
+    "price": 500,
+    "inStock": true
+  },
+  {
+    "id": 12,
+    "name": "HDMI Cable",
+    "price": 800,
+    "inStock": true
+  },
+  {
+    "id": 13,
+    "name": "Power Bank",
+    "price": 1800,
+    "inStock": true
+  },
+  {
+    "id": 14,
+    "name": "Charger",
+    "price": 1200,
+    "inStock": false
+  },
+  {
+    "id": 15,
+    "name": "SSD",
+    "price": 6000,
+    "inStock": true
+  },
+  {
+    "id": 16,
+    "name": "Hard Disk",
+    "price": 5500,
+    "inStock": true
+  },
+  {
+    "id": 17,
+    "name": "RAM 8GB",
+    "price": 2200,
+    "inStock": true
+  },
+  {
+    "id": 18,
+    "name": "RAM 16GB",
+    "price": 4200,
+    "inStock": false
+  },
+  {
+    "id": 19,
+    "name": "Graphics Card",
+    "price": 35000,
+    "inStock": true
+  },
+  {
+    "id": 20,
+    "name": "Processor",
+    "price": 18000,
+    "inStock": true
+  },
+  {
+    "id": 21,
+    "name": "Motherboard",
+    "price": 12000,
+    "inStock": true
+  },
+  {
+    "id": 22,
+    "name": "CPU Cooler",
+    "price": 3000,
+    "inStock": false
+  },
+  {
+    "id": 23,
+    "name": "Laptop Stand",
+    "price": 1500,
+    "inStock": true
+  },
+  {
+    "id": 24,
+    "name": "Cooling Pad",
+    "price": 1800,
+    "inStock": true
+  },
+  {
+    "id": 25,
+    "name": "Tablet",
+    "price": 22000,
+    "inStock": true
+  },
+  {
+    "id": 26,
+    "name": "Smartphone",
+    "price": 30000,
+    "inStock": true
+  },
+  {
+    "id": 27,
+    "name": "Smartwatch",
+    "price": 6000,
+    "inStock": false
+  },
+  {
+    "id": 28,
+    "name": "Fitness Band",
+    "price": 2500,
+    "inStock": true
+  },
+  {
+    "id": 29,
+    "name": "Earbuds",
+    "price": 3500,
+    "inStock": true
+  },
+  {
+    "id": 30,
+    "name": "Bluetooth Speaker",
+    "price": 2800,
+    "inStock": true
+  },
+  {
+    "id": 31,
+    "name": "Mic",
+    "price": 5000,
+    "inStock": false
+  }
+]
