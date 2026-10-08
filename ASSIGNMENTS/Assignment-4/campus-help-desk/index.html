@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Help Desk | Student Support Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation / Banner -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <span class="brand-badge">CHD</span>
+        <div>
+          <h1>Campus Help Desk</h1>
+          <p>Student Query & Support Services</p>
+        </div>
+      </div>
+      <div class="nav-tagline">Assignment 4 &bull; FSD Mini Project</div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    
+    <!-- Submission Form Section -->
+    <section class="portal-panel form-panel">
+      <div class="panel-header">
+        <h2 id="formHeading">Log New Campus Request</h2>
+        <span id="formStatusBadge" class="mode-badge new-mode">New Entry</span>
+      </div>
+
+      <form id="requestForm">
+        <input type="hidden" id="editId" value="">
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="studentName">Student Full Name</label>
+            <input type="text" id="studentName" placeholder="e.g. Harshit Sahu" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Campus Email</label>
+            <input type="email" id="email" placeholder="e.g. student@college.edu" required>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Support Category</label>
+            <select id="category" required>
+              <option value="" disabled selected>Select department / category</option>
+              <option value="IT & Campus Wi-Fi">IT & Campus Wi-Fi</option>
+              <option value="Hostel & Mess">Hostel & Mess</option>
+              <option value="Library & Books">Library & Books</option>
+              <option value="Academic & Exams">Academic & Exams</option>
+              <option value="Lab & Equipment">Lab & Equipment</option>
+              <option value="General Admin">General Admin</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="priority">Priority Level</label>
+            <select id="priority" required>
+              <option value="Normal" selected>Normal</option>
+              <option value="Urgent">Urgent</option>
+              <option value="Immediate">Immediate</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="description">Problem Description</label>
+          <textarea id="description" rows="3" placeholder="Provide details, room number, or specific device error..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" id="submitBtn" class="btn btn-primary">Submit Ticket</button>
+          <button type="button" id="cancelBtn" class="btn btn-secondary hidden">Cancel Edit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Ticket Records Section -->
+    <section class="portal-panel list-panel">
+      <div class="panel-header">
+        <div>
+          <h2>Active Campus Tickets</h2>
+          <p class="section-subtext">Review, modify, or resolve student requests</p>
+        </div>
+        <div class="stats-counter" id="ticketCount">Loading tickets...</div>
+      </div>
+
+      <!-- Container where JavaScript injects request cards -->
+      <div id="requestsList" class="requests-grid">
+        <!-- Rendered via script.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Campus Help Desk Portal &bull; Full Stack Development Mini Project (Node.js + Express + JSON FS)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
